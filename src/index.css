@@ -22,6 +22,58 @@
 article {
   animation: fade 0.5s ease backwards;
 }
+.timeline-list {
+  margin-left: 45px;
+}
+
+@media (min-width: 580px) {
+  .timeline-list {
+    margin-left: 65px;
+  }
+}
+
+.timeline-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+@media (min-width: 580px) {
+  .timeline-item:not(:last-child)::before {
+    left: -49px !important;
+  }
+}
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: hsl(0, 0%, 22%);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: rgb(250 204 21);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px hsl(0, 0%, 22%);
+}
+
+@media (min-width: 580px) {
+  .timeline-item::after {
+    height: 8px;
+    width: 8px;
+    left: -52px;
+  }
+}
 
 @keyframes fade {
   0% {

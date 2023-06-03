@@ -1,3 +1,4 @@
+import { icons } from "../../icons";
 import Divider from "../Divider";
 import SkillBox from "../SkillBox";
 import WebDevelopmentIcon from "../icons/WebDevelopmentIcon";
@@ -34,6 +35,14 @@ const About: React.FC = () => {
             Icon={<WordPressIcon />}
           />
         </ul>
+      </section>
+      <section>
+        <h3 className="my-4 text-xl font-bold ">Tools</h3>
+        <div className="grid grid-cols-5 gap-4">
+          {icons.map(({ Icon }) => (
+            <Icon />
+          ))}
+        </div>
       </section>
     </article>
   );

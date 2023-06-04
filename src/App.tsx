@@ -2,6 +2,7 @@ import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import About from "./components/tabs/About";
 import Resume from "./components/tabs/Resume";
+import Portfolio from "./components/tabs/Portfolio";
 
 const tabs = [
   {
@@ -17,6 +18,7 @@ const tabs = [
   {
     tab: "portfolio",
     label: "Portfolio",
+    component: <Portfolio />,
   },
   {
     tab: "contact",

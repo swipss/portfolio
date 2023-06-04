@@ -83,3 +83,20 @@ article {
     opacity: 1;
   }
 }
+
+.scaleUp {
+  animation: scaleUp 0.25s ease forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icon-box {
+  transition: 0.25s ease;
+}

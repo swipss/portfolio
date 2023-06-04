@@ -40,25 +40,29 @@ const Sidebar: React.FC = () => {
   return (
     <div
       className={`${
-        !isSidebarExpanded ? "max-h-28" : "max-h-[900px]"
-      } shadow-lg relative border px-4 pt-4  overflow-hidden  divide-y divide-neutral-800  transition-all  bg-neutral-900 border-neutral-800 rounded-2xl`}
+        !isSidebarExpanded
+          ? "max-h-28 sm:max-h-48"
+          : "max-h-[900px] sm:max-h-[1000px] xl:max-h-[580px]"
+      } shadow-lg xl:sticky xl:top-16 xl:h-full xl:w-auto xl:overflow-visible    relative border p-4 sm:p-8  overflow-hidden  divide-y divide-neutral-800  transition-all  bg-neutral-900 border-neutral-800 rounded-2xl`}
     >
-      <div className="flex items-center w-full gap-4 mb-4">
+      <div className="flex items-center w-full gap-4 mb-4 xl:flex-col sm:mb-8">
         <img
           src={profile}
           alt="profile"
-          className="w-20 h-20 p-2 bg-neutral-800 rounded-2xl"
+          className="w-20 h-20 p-2 sm:h-32 sm:w-32 bg-neutral-800 rounded-2xl"
         />
 
         <div className="font-bold text-white">
-          <h1 className="text-lg">Sten Vassiljev</h1>
-          <div className="px-2.5 pb-0.5 mt-2 rounded-lg bg-neutral-800">
-            <span className="text-xs font-light">Front-End Developer</span>
+          <h1 className="text-lg sm:text-2xl">Sten Vassiljev</h1>
+          <div className="px-2.5 pb-0.5 mt-2 rounded-lg bg-neutral-800 w-max">
+            <span className="text-xs font-light sm:text-sm">
+              Front-End Developer
+            </span>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 py-4">
+      <div className="flex flex-col gap-4 py-4 sm:py-8">
         {contactList.map((contact) => (
           <ContactRow
             key={contact.label}
@@ -69,7 +73,7 @@ const Sidebar: React.FC = () => {
         ))}
       </div>
 
-      <div className="flex items-center gap-4 pt-4 pl-1 ">
+      <div className="flex items-center gap-4 pt-4 pl-1 xl:justify-center">
         {socialMediaLinks.map((linkData, index) => (
           <SocialMediaLink
             key={index}
@@ -79,12 +83,16 @@ const Sidebar: React.FC = () => {
         ))}
       </div>
 
-      <button onClick={toggleSidebar}>
-        <ChevronDownIcon
-          className={`${
-            isSidebarExpanded && "bg-neutral-800"
-          } absolute top-0 right-0 w-8 h-8 p-2 text-white transition-all duration-100 shadow-lg  hover:bg-neutral-800 stroke-yellow-400 rounded-bl-2xl rounded-tr-2xl`}
-        />
+      <button
+        onClick={toggleSidebar}
+        className={`${
+          isSidebarExpanded && "bg-neutral-800"
+        } absolute top-0 p-2 right-0 text-white xl:hidden transition-all duration-100 shadow-lg rounded-bl-2xl rounded-tr-2xl hover:bg-neutral-800`}
+      >
+        <ChevronDownIcon className="w-6 h-6 sm:hidden stroke-yellow-400" />
+        <span className="hidden mx-2 text-sm text-yellow-400 sm:block">
+          Show Contacts
+        </span>
       </button>
     </div>
   );

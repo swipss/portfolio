@@ -6,7 +6,7 @@ import WordPressIcon from "../icons/WordPressIcon";
 
 const About: React.FC = () => {
   return (
-    <article className="p-4 mt-4 overflow-hidden text-white transition-all border shadow-lg bg-neutral-900 border-neutral-800 rounded-2xl">
+    <article className="p-4 mt-4 overflow-hidden text-white transition-all border shadow-lg xl:w-auto bg-neutral-900 border-neutral-800 rounded-2xl">
       <h2 className="text-2xl font-bold">About Me</h2>
       <Divider />
       <p className="text-sm font-light leading-6 text-neutral-100">

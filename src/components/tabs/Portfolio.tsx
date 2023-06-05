@@ -25,7 +25,6 @@ const Portfolio: React.FC = () => {
               key={project.title}
               handleReadMoreClick={() => handleProjectClick(project)}
               title={project.title}
-              description={project.description}
               image={project.image}
               github={project.github}
               live={project.live}

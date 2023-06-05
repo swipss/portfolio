@@ -4,7 +4,6 @@ import { useState } from "react";
 interface ProjectProps {
   handleReadMoreClick: () => void;
   title: string;
-  description: string;
   image: string;
   github?: string;
   live: string;
@@ -14,7 +13,6 @@ interface ProjectProps {
 const Project: React.FC<ProjectProps> = ({
   handleReadMoreClick,
   title,
-  description,
   image,
   github,
   live,

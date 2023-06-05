@@ -30,10 +30,10 @@ const Contact: React.FC = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        import.meta.env.SERCIVE_ID,
-        import.meta.env.TEMPLATE_ID,
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        import.meta.env.PUBLIC_ID
+        import.meta.env.VITE_PUBLIC_ID
       )
       .then(
         () => {

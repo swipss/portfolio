@@ -24,7 +24,7 @@ const PortfolioModal: React.FC<PortfolioModalProps> = ({
   toolsUsed,
 }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full p-4 bg-black bg-opacity-50">
       <div className="relative max-w-sm p-4 border shadow scaleUp border-neutral-800 rounded-2xl bg-neutral-900">
         <button
           onClick={onClose}
@@ -35,7 +35,7 @@ const PortfolioModal: React.FC<PortfolioModalProps> = ({
         <img
           src={image}
           alt=""
-          className="object-cover w-full shadow-2xl h-52 rounded-2xl shadow-neutral-700"
+          className="object-cover object-center w-full shadow-2xl h-52 rounded-2xl shadow-neutral-700"
         />
         <div>
           <div className="flex items-center justify-between">

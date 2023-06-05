@@ -47,7 +47,7 @@ function App() {
               onClick={() => setActiveTab(tab)}
               className={`${
                 activeTab == tab && "text-yellow-400"
-              } transition-all hover:text-neutral-40 xl:text-base`}
+              } transition-all hover:text-neutral-40 xl:text-sm`}
             >
               {label}
             </button>

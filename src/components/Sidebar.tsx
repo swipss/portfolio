@@ -10,6 +10,7 @@ import ContactRow from "./ContactRow";
 import SocialMediaLink from "./SocialMediaLink";
 import LinkedInIcon from "./icons/LinkedInIcon";
 import GitHubIcon from "./icons/GitHubIcon";
+import cv from "../assets/CV.pdf";
 
 const contactList = [
   { label: "EMAIL", value: "vassiljevsten1@gmail.com", Icon: EnvelopeIcon },
@@ -23,7 +24,7 @@ const socialMediaLinks = [
   },
   { link: "https://github.com/swipss", Icon: <GitHubIcon /> },
   {
-    link: "#",
+    link: cv,
     Icon: (
       <DocumentIcon className="w-5 h-5 text-neutral-400 hover:text-neutral-300" />
     ),

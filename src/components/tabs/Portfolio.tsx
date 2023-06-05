@@ -106,11 +106,11 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <article className="p-4 mt-4 overflow-hidden text-white transition-all border shadow-lg bg-neutral-900 border-neutral-800 rounded-2xl">
+    <article className="p-4 mt-4 overflow-hidden text-white transition-all border shadow-lg xl:p-8 bg-neutral-900 border-neutral-800 rounded-2xl">
       <h2 className="text-2xl font-bold">Portfolio</h2>
       <Divider />
       <section>
-        <ul className="grid grid-cols-1 gap-6">
+        <ul className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {projects.map((project) => (
             <Project
               key={project.title}

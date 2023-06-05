@@ -6,7 +6,7 @@ import WordPressIcon from "../icons/WordPressIcon";
 
 const About: React.FC = () => {
   return (
-    <article className="p-4 mt-4 overflow-hidden text-white transition-all border shadow-lg xl:w-auto bg-neutral-900 border-neutral-800 rounded-2xl">
+    <article className="relative p-4 mt-4 overflow-hidden text-white transition-all border shadow-lg xl:p-8 xl:w-auto bg-neutral-900 border-neutral-800 rounded-2xl">
       <h2 className="text-2xl font-bold">About Me</h2>
       <Divider />
       <p className="text-sm font-light leading-6 text-neutral-100">
@@ -23,7 +23,7 @@ const About: React.FC = () => {
       </p>
       <section>
         <h3 className="my-4 text-xl font-bold">What I'm Doing</h3>
-        <ul className="flex flex-col items-center gap-4">
+        <ul className="grid items-start grid-cols-1 gap-4 md:grid-cols-2">
           <SkillBox
             skill="Web Development"
             description="High-quality development of sites at the professional level."

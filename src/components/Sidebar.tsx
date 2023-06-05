@@ -43,7 +43,7 @@ const Sidebar: React.FC = () => {
         !isSidebarExpanded
           ? "max-h-28 sm:max-h-48"
           : "max-h-[900px] sm:max-h-[1000px] xl:max-h-[580px]"
-      } shadow-lg xl:sticky xl:top-16 xl:h-full xl:w-auto xl:overflow-visible    relative border p-4 sm:p-8  overflow-hidden  divide-y divide-neutral-800  transition-all  bg-neutral-900 border-neutral-800 rounded-2xl`}
+      } shadow-lg xl:sticky xl:top-12 xl:max-h-[490px] xl:w-auto  xl:overflow-visible    relative border p-4 sm:p-8  overflow-hidden  divide-y divide-neutral-800  transition-all  bg-neutral-900 border-neutral-800 rounded-2xl`}
     >
       <div className="flex items-center w-full gap-4 mb-4 xl:flex-col sm:mb-8">
         <img
@@ -52,7 +52,7 @@ const Sidebar: React.FC = () => {
           className="w-20 h-20 p-2 sm:h-32 sm:w-32 bg-neutral-800 rounded-2xl"
         />
 
-        <div className="font-bold text-white">
+        <div className="flex-col items-center justify-center font-bold text-white xl:flex">
           <h1 className="text-lg sm:text-2xl">Sten Vassiljev</h1>
           <div className="px-2.5 pb-0.5 mt-2 rounded-lg bg-neutral-800 w-max">
             <span className="text-xs font-light sm:text-sm">
@@ -87,7 +87,7 @@ const Sidebar: React.FC = () => {
         onClick={toggleSidebar}
         className={`${
           isSidebarExpanded && "bg-neutral-800"
-        } absolute top-0 p-2 right-0 text-white xl:hidden transition-all duration-100 shadow-lg rounded-bl-2xl rounded-tr-2xl hover:bg-neutral-800`}
+        } absolute top-0 p-2 right-0 text-white xl:hidden  transition-all duration-100 shadow-lg rounded-bl-2xl rounded-tr-2xl hover:bg-neutral-800`}
       >
         <ChevronDownIcon className="w-6 h-6 sm:hidden stroke-yellow-400" />
         <span className="hidden mx-2 text-sm text-yellow-400 sm:block">

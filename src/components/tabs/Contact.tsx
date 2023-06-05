@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import Divider from "../Divider";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import emailjs from "@emailjs/browser";
-import loader from "../../assets/loader.svg";
 import Loader from "../../Loader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -19,8 +18,8 @@ const Contact: React.FC = () => {
       position: "top-center",
     });
 
-  const errorr = () => {
-    toast.error("Something went wrong!", {
+  const errorr = (msg: string) => {
+    toast.error(msg, {
       position: "top-center",
     });
   };
@@ -45,7 +44,7 @@ const Contact: React.FC = () => {
         },
         (error) => {
           setLoading(false);
-          errorr();
+          errorr(error.text);
         }
       );
   };

@@ -38,11 +38,7 @@ const Resume: React.FC = () => {
         </div>
         <ul className="timeline-list">
           {education.map(({ title, year }) => (
-            <TimelineItem
-              title={title}
-              year={year}
-              description="Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
-            />
+            <TimelineItem title={title} year={year} />
           ))}
         </ul>
       </section>
@@ -53,11 +49,7 @@ const Resume: React.FC = () => {
         </div>
         <ul className="timeline-list">
           {experience.map(({ title, year }) => (
-            <TimelineItem
-              title={title}
-              year={year}
-              description="Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur."
-            />
+            <TimelineItem title={title} year={year} />
           ))}
         </ul>
       </section>

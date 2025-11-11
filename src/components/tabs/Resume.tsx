@@ -4,11 +4,16 @@ import TimelineItem from "../TimelineItem";
 
 const education = [
   {
-    title: "Tartu Ülikool, Computer Science",
-    year: "Starting Fall 2023",
+    title: "Tartu Ülikool, Computer Science, BSc",
+    year: "2023 - 2026",
   },
   {
-    title: "Tartu Tamme Gümnaasium",
+    title:
+      "Federal University of the State of Rio de Janeiro (Exchange Program)",
+    year: "2025 Aug - 2026 Feb",
+  },
+  {
+    title: "Tartu Tamme Gümnaasium (IT field)",
     year: "2020 — 2023",
   },
 
@@ -20,8 +25,12 @@ const education = [
 
 const experience = [
   {
+    title: "Junior Fullstack Developer at Bauhub",
+    year: "2023 Aug - 2025 Aug",
+  },
+  {
     title: "WordPress Developer at Must Uba",
-    year: "2022 Aug - Present",
+    year: "2021 Aug - 2023",
   },
 ];
 

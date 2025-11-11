@@ -57,7 +57,7 @@ const Sidebar: React.FC = () => {
           <h1 className="text-lg sm:text-2xl">Sten Vassiljev</h1>
           <div className="px-2.5 pb-0.5 mt-2 rounded-lg bg-neutral-800 w-max">
             <span className="text-xs font-light sm:text-sm">
-              Front-End Developer
+              Software Developer
             </span>
           </div>
         </div>

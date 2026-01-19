@@ -58,6 +58,21 @@ const About: React.FC = () => {
         and do photography.
       </p>
 
+      <div className="flex items-center gap-2 mt-2">
+        <div className="px-2 py-0.5 rounded-md bg-sky-100 w-max text-sky-800">
+          🇪🇪 Native
+        </div>
+        <div className="px-2 py-0.5 rounded-md bg-red-100 w-max text-red-800">
+          🇬🇧 C1
+        </div>
+        <div className="px-2 py-0.5 rounded-md bg-white w-max text-gray-800">
+          🇷🇺 Speaking proficiency
+        </div>
+        <div className="px-2 py-0.5 rounded-md  bg-green-100 w-max text-green-800">
+          🇧🇷 Conversational
+        </div>
+      </div>
+
       <section>
         <h3 className="my-4 text-xl font-bold">What I'm Doing</h3>
         <ul className="grid items-start grid-cols-1 gap-4 md:grid-cols-2">

@@ -10,49 +10,54 @@ const About: React.FC = () => {
       <h2 className="text-2xl font-bold">About Me</h2>
       <Divider />
       <p className="text-sm font-light leading-6 text-neutral-100">
-        As a passionate{" "}
-        <strong className="text-yellow-400">Front-End Developer</strong>, I
-        specialize in creating{" "}
-        <strong className="text-yellow-400">beautiful</strong> and{" "}
-        <strong className="text-yellow-400">user-friendly</strong>{" "}
-        <strong className="text-yellow-400">websites</strong> that leave a
-        lasting impression. With a strong focus on front-end development, I have
-        honed my skills in crafting visually appealing interfaces and intuitive
-        user experiences.
-        <br />
-        <br />
-        Driven by my passion for design and technology, I bring creativity and
-        attention to detail to every project I undertake. From conceptualization
-        to implementation, I strive to deliver websites that not only meet
-        client requirements but exceed expectations.
-        <br />
-        <br />
-        In addition to my expertise in front-end development, I am also
-        well-versed in{" "}
+        I’m a{" "}
         <strong className="text-yellow-400">
-          full-stack application development
-        </strong>
-        . This broader skill set allows me to seamlessly integrate front-end
-        components with back-end functionalities, resulting in robust and
-        scalable applications.
+          third-year Computer Science student
+        </strong>{" "}
+        and a <strong className="text-yellow-400">full-stack developer</strong>{" "}
+        with over{" "}
+        <strong className="text-yellow-400">
+          two years of hands-on experience
+        </strong>{" "}
+        building modern web applications. My strongest focus is creating clean
+        and{" "}
+        <strong className="text-yellow-400">user-friendly front ends</strong>{" "}
+        that feel intuitive and look polished and work smoothly across devices.
+        At the same time I’m comfortable working across the full stack so I can
+        take a feature from idea to implementation and connect the UI with
+        reliable back-end functionality.
         <br />
         <br />
-        Beyond coding, I find inspiration and relaxation through various
-        hobbies. I enjoy immersing myself in books, expanding my knowledge
-        across different subjects. To maintain a healthy lifestyle, I frequent
-        the gym, where I find the perfect balance between physical fitness and
-        mental well-being. Additionally, photography is one of my creative
-        outlets, allowing me to capture unique moments and perspectives through
-        the lens.
+        Alongside my IT job experience I have also done{" "}
+        <strong className="text-yellow-400">
+          freelance website development
+        </strong>{" "}
+        and worked with clients to turn their goals into real and working
+        websites. I enjoy translating ideas into a clear structure and strong
+        visual design and thoughtful details that make the experience feel
+        effortless for the user. I care about both the end result and how it’s
+        built and I aim to write maintainable code and keep things scalable and
+        deliver quality that lasts.
         <br />
         <br />
-        With a deep passion for creating visually stunning and user-friendly
-        websites, I am committed to delivering exceptional results and
-        continuously pushing the boundaries of what is possible in the digital
-        realm. I welcome opportunities to collaborate on exciting projects that
-        allow me to utilize my skills and create impactful experiences for
-        users.
+        As a person I’m <strong className="text-yellow-400">
+          open-minded
+        </strong>{" "}
+        and <strong className="text-yellow-400">communicative</strong> and a{" "}
+        <strong className="text-yellow-400">team player</strong>. I genuinely
+        enjoy collaborating and sharing ideas and building strong working
+        relationships. I’m also passionate about{" "}
+        <strong className="text-yellow-400">travelling</strong> and connecting
+        with people from different cultures and I’m especially motivated by
+        opportunities that involve{" "}
+        <strong className="text-yellow-400">international collaboration</strong>{" "}
+        and long-term relationships.
+        <br />
+        <br />
+        Outside of coding I like to stay active at the gym and unwind with books
+        and do photography.
       </p>
+
       <section>
         <h3 className="my-4 text-xl font-bold">What I'm Doing</h3>
         <ul className="grid items-start grid-cols-1 gap-4 md:grid-cols-2">

@@ -10,7 +10,7 @@ import ContactRow from "./ContactRow";
 import SocialMediaLink from "./SocialMediaLink";
 import LinkedInIcon from "./icons/LinkedInIcon";
 import GitHubIcon from "./icons/GitHubIcon";
-import cv from "../assets/CV.pdf";
+import cv from "../assets/Sten_Vassiljev_CV.pdf";
 
 const contactList = [
   { label: "EMAIL", value: "vassiljevsten1@gmail.com", Icon: EnvelopeIcon },
@@ -42,9 +42,9 @@ const Sidebar: React.FC = () => {
     <div
       className={`${
         !isSidebarExpanded
-          ? "max-h-28 sm:max-h-48"
+          ? "max-h-32 sm:max-h-48"
           : "max-h-[900px] sm:max-h-[1000px] xl:max-h-[580px]"
-      } shadow-lg xl:sticky xl:top-12 xl:max-h-[490px] xl:w-auto  xl:overflow-visible    relative border p-4 sm:p-8  overflow-hidden  divide-y divide-neutral-800  transition-all  bg-neutral-900 border-neutral-800 rounded-2xl`}
+      } shadow-lg xl:sticky xl:top-12 xl:max-h-[520px] xl:w-auto  xl:overflow-visible    relative border p-4 sm:p-8  overflow-hidden  divide-y divide-neutral-800  transition-all  bg-neutral-900 border-neutral-800 rounded-2xl`}
     >
       <div className="flex items-center w-full gap-4 mb-4 xl:flex-col sm:mb-8">
         <img
@@ -55,10 +55,17 @@ const Sidebar: React.FC = () => {
 
         <div className="flex-col items-center justify-center font-bold text-white xl:flex">
           <h1 className="text-lg sm:text-2xl">Sten Vassiljev</h1>
-          <div className="px-2.5 pb-0.5 mt-2 rounded-lg bg-neutral-800 w-max">
-            <span className="text-xs font-light sm:text-sm">
-              Software Developer
-            </span>
+          <div className="flex flex-col items-center ">
+            <div className="px-2.5 pb-0.5 mt-2 rounded-lg bg-neutral-800 w-max">
+              <span className="text-xs font-light sm:text-sm">
+                Software Developer
+              </span>
+            </div>
+            <div className="px-2.5 pb-0.5 mt-2 rounded-lg bg-neutral-800 w-max">
+              <span className="text-xs font-light sm:text-sm">
+                Computer Science, BSc
+              </span>
+            </div>
           </div>
         </div>
       </div>
